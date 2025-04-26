@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Document</title>
+</head>
+<body class="font-sans  w-11/12 mx-auto  mt-5  text-gray-800">
+  <header>
+    <nav>
+      <div class="flex justify-between items-center bg-sky-100 border-none
+       py-5 rounded shadow-md ">
+        <div class="flex  items-center  gap-1 mx-auto">
+          <img class="w-10 h-10" src="assets/logo.png" alt="">
+          <h2 class="text-3xl text-gray-800 ">Dev<span class="text-3xl font-bold">Board</span> </h2>
+        </div>
+
+    </nav>
+
+  <main class="mt-10">
+    <h1 class="text-3xl bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] p-5 rounded-3xl w-2/4 text-center mx-auto mb-10 font-semibold">Help Center FAQs</h1>
+    <div class="collapse collapse-arrow bg-base-100 border border-base-300 text-xl ">
+      <input type="radio" name="my-accordion-2"/>
+      <div class="collapse-title font-semibold">What are the different ways to select an element in the DOM?</div>
+      <div class="collapse-content text-lg"><hr> getElementById(): Selects an element by its id. <br><br>
+  
+        getElementsByClassName(): Selects elements by class name (returns a live HTMLCollection). <br> <br>
+        
+        getElementsByTagName(): Selects elements by tag name (returns a live HTMLCollection).
+        <br><br>
+        querySelector(): Selects the first element matching a CSS selector. <br><br>
+        
+        querySelectorAll(): Selects all elements matching a CSS selector (returns a static NodeList).</div>
+    </div>
+  
+    <div class="collapse collapse-arrow bg-base-100 border border-base-300 text-xl">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title font-semibold">What is the difference between innerHTML, innerText, and textContent ?</div>
+      <div class="collapse-content text-lg"><hr> innerHTML: Includes HTML tags. <br>
+  
+        innerText: Includes visible text only.<br>
+        
+        textContent: Includes all text, even if hidden.</div>
+    </div>
+  
+    <div class="collapse collapse-arrow bg-base-100 border border-base-300 text-xl ">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title font-semibold">What is event delegation in the DOM?</div>
+      <div class="collapse-content text-lg"><hr> Event delegation means instead of adding event listeners to each child element individually, you add a single event listener to a parent element, and catch events from its children using event bubbling.
+  
+        It saves memory, improves performance, and handles dynamically added elements easily.</div>
+  
+  
+    <div class="collapse collapse-arrow bg-base-100 border border-base-300 text-xl ">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title font-semibold">What is event bubbling in the DOM?</div>
+      <div class="collapse-content text-lg"><hr> Event bubbling means when an event happens on a child element, it first runs its own handler, then the event moves up (bubbles) to its parent, then grandparent, and so on up to the root </div>
+  
+  
+    <div class="collapse collapse-arrow bg-base-100 border border-base-300 text-xl ">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title font-semibold">How do you create, add, and remove elements using JavaScript?</div>
+      <div class="collapse-content text-lg">Create element:
+        Create a new HTML element using JavaScript. (createElement)
+        
+        Add element:
+        Insert the created element into a parent element. (appendChild or append)
+        
+        Remove element:
+        Delete an existing element from the DOM. (remove)</div>
+    </div>
+    </div>
+    <div class="flex justify-end items-center " >
+
+      <button id="backToHome" class="bg-blue-700 rounded-md text-white p-3  font-semibold  text-center   mt-10 mb-10">
+        Back to Home
+      </button>
+    </div>
+  </main>
+  <script src="2ndpart.js"></script>
+</body>
+</html>
